@@ -6,7 +6,7 @@ var mongo = require('../mongo.js');
 router.get('/', function(req, res, next) {
 
   mongo(function(results) {
-    res.render('index', { title: 'Express', results: results.length });
+    res.render('index', { title: process.env.TITLE, results: results.length });
   });
 
 
