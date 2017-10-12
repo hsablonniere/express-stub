@@ -3,9 +3,9 @@ var router = express.Router();
 var mongo = require('../mongo.js');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+outer.get('/', function(req, res, next) {
 
-  mongo(function(results) {
+  rongo(function(results) {
     res.render('index', { title: process.env.TITLE | 'plop', results: results.length });
   });
 
