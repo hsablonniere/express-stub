@@ -11,7 +11,8 @@
     "debug": "*",
     "express": "*",
     "jade": "*",
-    "mongodb": "*",
+    "mongodb": "2.*",
+    "express-statsd": "^0.3.0",
     "morgan": "*",
     "serve-favicon": "*"
   }
